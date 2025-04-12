@@ -11,15 +11,26 @@
  </head>
  <body>
   <div class="nav_bar">
-    <div class="ham_burger">
-      <div class="line"></div>
-      <div class="line"></div>
-      <div class="line"></div>
-    </div>
-    <div class="search">
-      <input type="text" placeholder="Search..">
-      <button value="submit"><i class="fas fa-search"></i></button>
-    </div>
-  </div>
+   <div class="shield">  
+    <div class="ham_burger" id="hamburger">  
+      <div class="line"></div>  
+      <div class="line"></div>  
+      <div class="line"></div>  
+    </div> 
+   </div>
+   <div class="search">  
+      <input type="text" id="searchInput" placeholder="Search..." autocomplete="off">  
+      <button id="searchBtn"><i class="fas fa-search"></i></button>  
+    </div>  
+  </div>  
+  <ul class="menu_insight" id="menuInsight">  
+    <li class="searchable"><a href="#">Home</a></li>  
+    <li class="searchable"><a href="#">Certificates</a></li>  
+    <li class="searchable"><a href="#">Projects</a></li>  
+    <li class="searchable"><a href="#">Resume</a></li>  
+    <li class="searchable"><a href="#">Contact</a></li>  
+  </ul>  
+  <div class="no-result" id="noResult">This is not available on this site.</div>  
+  <script src="script.js"></script>
  </body>
 </html>
