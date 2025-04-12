@@ -1,0 +1,53 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+.nav_bar{
+  height:40px;
+  /*background-color:rgb(63,1,48);*/
+  background-color:rgb(67,121,243);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.ham_burger{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  margin-left:10px;
+}
+.line{
+  height:3.6px;
+  width:25px;
+  margin-top:2px;
+  background-color:#fff;
+}
+.search{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin-right:10%;
+}
+input{
+  padding:5px;
+  background-color:#fff;
+  outline:none;
+  border:1px solid gray;
+  border-top-left-radius:5px;
+  border-bottom-left-radius:5px;
+  width:200px;
+  font-family:Georgia;
+}
+button{
+  padding:5px;
+  background-color:;
+  outline:none;
+  border:1px solid ;
+  border-top-right-radius:2px;
+  border-bottom-right-radius:2px;
+}
+input:hover{
+ border:1px solid rgb(245,120,120);
+ color:green;
+}
