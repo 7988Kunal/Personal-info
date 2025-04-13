@@ -71,6 +71,6 @@
         }  
       });  
 
-      noResult.textContent = "This is not available on this site.";  
+      noResult.textContent = "This may be directly visible or not available on this site.";  
       noResult.style.display = found ? "none" : "block";  
     });  
