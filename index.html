@@ -54,6 +54,30 @@
       </div>
     </div>
   </section>
+    <section class="contact-section">
+    <form class="contact-form" id="contactForm" action="https://formspree.io/f/xnnpwgdk" method="POST">
+      <h2 style="font-size:17px;">Contact Me</h2>
+
+      <div class="input-group">
+        <input type="text" name="name" id="name" required placeholder=" " />
+        <label for="name">Your Name</label>
+      </div>
+
+      <div class="input-group">
+        <input type="email" name="email" id="email" required placeholder=" " />
+        <label for="email">Your Email</label>
+      </div>
+
+      <div class="input-group">
+        <textarea name="message" id="message" required placeholder=" "></textarea>
+        <label for="message">Your Message</label>
+      </div>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <div class="toast" id="toast">Message sent successfully!</div>
   <footer>
     <p>© 2025 Kunal Vats. All rights reserved.</p>
     <p>
