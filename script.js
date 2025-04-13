@@ -4,7 +4,39 @@
     const searchBtn = document.getElementById("searchBtn");  
     const input = document.getElementById("searchInput");  
     const items = document.querySelectorAll(".searchable");  
-    const noResult = document.getElementById("noResult");  
+    const noResult = document.getElementById("noResult"); 
+    const form = document.getElementById('contactForm');
+    const toast = document.getElementById('toast');
+
+    form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+
+      const data = new FormData(form);
+      const endpoint = form.action;
+
+      try {
+        const response = await fetch(endpoint, {
+          method: 'POST',
+          body: data,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+
+        if (response.ok) {
+          toast.style.display = 'block';
+          setTimeout(() => {
+            toast.style.display = 'none';
+          }, 3000);
+          form.reset();
+        } else {
+          const err = await response.json();
+          alert(err.message || 'Submission failed. Please try again.');
+        }
+      } catch (error) {
+        alert('Error sending message. Please check your internet connection or try again.');
+      }
+    });
 
     // Toggle menu  
     hamburger.addEventListener("click", () => {  
