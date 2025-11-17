@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="en">
  <head>
   <meta charset="UTF-8">
@@ -40,9 +40,9 @@
     <div class="container">
       <div class="intro-content">
         <!-- Profile Image -->
-        <img src="https://i.ibb.co/q3dWwJT7/file-TVSjqso-Q1-Scyi-Hs-DY5yvi7.webp" alt="Your Name" class="profile-image">
+        <!--<img src="https://i.ibb.co/q3dWwJT7/file-TVSjqso-Q1-Scyi-Hs-DY5yvi7.webp" alt="Your Name" class="profile-image">
         <!-- Introduction Text -->
-        <div class="intro-text">
+        <!--<div class="intro-text">
           <h2>Hi, I'm Kunal Vats</h2>
           <p>
             I'm a passionate AI & ML enthusiast and a first-year BTech student at MDU Rohtak. I am dedicated to exploring the world of Artificial Intelligence and Machine Learning and contributing to projects that make an impact. I enjoy working on AI projects, coding, and learning new technologies.
@@ -88,4 +88,182 @@
   </footer>
   <script src="script.js"></script>
  </body>
+</html>-->
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EduPilot Loader — 4‑Color Test Loader</title>
+  <style>
+    :root{
+      --size: 56px;           /* overall loader size */
+      --gap: 8px;             /* gap between dots */
+      /* Default four colors (Google-like). Change these to Yahoo or any brand colors */
+      --c1: #4285F4; /* blue */
+      --c2: #EA4335; /* red  */
+      --c3: #FBBC05; /* yellow */
+      --c4: #34A853; /* green */
+      --bg: #0f1724;         /* page background for demo */
+      --label-color: #dbeafe;
+      --speed: 1s;           /* base animation speed */
+    }/* Demo page styles */
+html,body{height:100%;}
+body{
+  margin:0;
+  display:grid;
+  place-items:center;
+  background:linear-gradient(180deg,var(--bg) 0%, #071129 100%);
+  font-family:Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  color:var(--label-color);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  padding:24px;
+}
+
+.loader-wrap{
+  display:flex;
+  gap:24px;
+  align-items:center;
+  flex-direction:column;
+}
+
+.loader{
+  width:calc(var(--size) * 2);
+  height:var(--size);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:var(--gap);
+}
+
+.dot{
+  width:calc(var(--size) / 4.5);
+  height:calc(var(--size) / 4.5);
+  border-radius:999px;
+  transform-origin:center;
+  box-shadow:0 6px 18px rgba(2,6,23,0.6);
+}
+
+/* color the dots */
+.dot:nth-child(1){ background:var(--c1); animation:pop var(--speed) ease-in-out infinite; }
+.dot:nth-child(2){ background:var(--c2); animation:pop calc(var(--speed) * 1.05) ease-in-out infinite; }
+.dot:nth-child(3){ background:var(--c3); animation:pop calc(var(--speed) * 1.1) ease-in-out infinite; }
+.dot:nth-child(4){ background:var(--c4); animation:pop calc(var(--speed) * 1.15) ease-in-out infinite; }
+
+@keyframes pop{
+  0%{ transform: translateY(0) scale(1); opacity:0.85 }
+  25%{ transform: translateY(-18%) scale(1.25); opacity:1 }
+  50%{ transform: translateY(0) scale(1); opacity:0.9 }
+  100%{ transform: translateY(0) scale(1); opacity:0.85 }
+}
+
+/* subtle stagger using animation-delay on each dot */
+.dot:nth-child(1){ animation-delay: calc(var(--speed) * 0s); }
+.dot:nth-child(2){ animation-delay: calc(var(--speed) * 0.08); }
+.dot:nth-child(3){ animation-delay: calc(var(--speed) * 0.16); }
+.dot:nth-child(4){ animation-delay: calc(var(--speed) * 0.24); }
+
+/* label + small subtitle */
+.brand{
+  display:flex;
+  gap:10px;
+  align-items:center;
+  user-select:none;
+}
+.brand h1{
+  margin:0;
+  font-size:18px;
+  letter-spacing:0.6px;
+  display:flex;
+  align-items:baseline;
+  gap:8px;
+}
+.brand .pilot{
+  font-weight:700;
+  background:linear-gradient(90deg,var(--c1),var(--c2),var(--c3),var(--c4));
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+}
+.brand small{display:block;color:rgba(220,230,255,0.6); font-size:12px}
+
+/* make loader adaptive/small screens */
+@media (max-width:420px){
+  :root{ --size:44px; }
+}
+
+/* Optional: progress bar look-alike */
+.progress-sim{
+  width:220px;
+  height:8px;
+  border-radius:999px;
+  background:rgba(255,255,255,0.06);
+  overflow:hidden;
+  margin-top:10px;
+  position:relative;
+}
+.progress-sim .fill{
+  height:100%;
+  width:0%;
+  background:linear-gradient(90deg,var(--c1),var(--c2));
+  border-radius:999px;
+  transition:width 600ms ease;
+}
+
+/* accessibility: prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce){
+  .dot{ animation: none; transform: none; }
+  .progress-sim .fill{ transition:none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="loader-wrap" role="status" aria-live="polite" aria-label="EduPilot loading">
+    <div class="brand" aria-hidden="true">
+      <h1>Edu<span class="pilot">Pilot</span></h1>
+      <!-- <small>Loading test view · 4‑color loader</small> -->
+    </div><div class="loader" id="edupilot-loader">
+  <div class="dot" data-color-index="1"></div>
+  <div class="dot" data-color-index="2"></div>
+  <div class="dot" data-color-index="3"></div>
+  <div class="dot" data-color-index="4"></div>
+</div>
+
+<div class="progress-sim" aria-hidden="true">
+  <div class="fill" id="progressFill"></div>
+</div>
+
+  </div>  <script>
+    // Simple demo script: animate simulated progress and show the loader.
+    // You can remove this script when using the loader in your app and control visibility via JS.
+    (function(){
+      const fill = document.getElementById('progressFill');
+      let v = 0;
+      const id = setInterval(()=>{
+        v += Math.random() * 12; // pseudo-progress
+        if(v >= 100){ v = 100; fill.style.width = v + '%'; clearInterval(id); }
+        else{ fill.style.width = Math.min(100, Math.round(v)) + '%'; }
+      }, 420);
+
+      // Example: API call wrapper — replace with real logic
+      // showLoader() / hideLoader() helpers
+      window.EduPilotLoader = {
+        show(){ document.body.dataset.loading = 'true'; document.querySelector('.loader-wrap').style.display='flex'; },
+        hide(){ document.body.dataset.loading = 'false'; document.querySelector('.loader-wrap').style.display='none'; }
+      };
+
+      // expose a small helper to change colors at runtime
+      window.setLoaderColors = function(c1,c2,c3,c4){
+        const root = document.documentElement.style;
+        if(c1) root.setProperty('--c1', c1);
+        if(c2) root.setProperty('--c2', c2);
+        if(c3) root.setProperty('--c3', c3);
+        if(c4) root.setProperty('--c4', c4);
+      };
+
+    })();
+  </script></body>
 </html>
