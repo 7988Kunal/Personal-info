@@ -371,7 +371,12 @@
   window.onload = function () {
     username.focus();
     username.select();
-    username.classList.add('active');
+    if(username.value === ""){
+      username.classList.add('active');
+    }else{
+      username.classList.remove('active');
+    }
+    
   };
 
   faInfo.forEach(icon => {
@@ -393,3 +398,4 @@
 </body>
 
 </html>
+
