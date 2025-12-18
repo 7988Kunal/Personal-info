@@ -109,6 +109,10 @@
     input::placeholder{
       color:#07062a;
     }
+    input.active{
+     border-color: #2b6b75aa;
+     box-shadow: 0 0 0 5px #d5edf1aa;
+    }
     input:hover{
       border:1px solid #2b6b75aa;
       box-shadow:0px 0px 0px 5px #d5edf1aa;
@@ -367,6 +371,7 @@
   window.onload = function () {
     username.focus();
     username.select();
+    username.classList.add('active');
   };
 
   faInfo.forEach(icon => {
@@ -386,4 +391,5 @@
   });
 </script>
 </body>
+
 </html>
