@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sign-UP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+  *{
+    padding:0;
+    margin:0;
+  }
+    #signup{
+      border-radius:10px;
+      margin:10px;
+      margin-top:20px;
+      padding:10px;
+    }
+    legend{
+      font-weight:380;
+      font-size:1.5rem;
+      transform:translateY(-3px);
+    }
+    .input-box{
+      display:flex;
+      flex-direction:column;
+      margin:5px;
+    }
+    .fa-info-circle{
+      transform:scale(1.5);
+      position:absolute;
+      border-radius:x;
+      right:70px;
+    }
+    .fa-info-circle:hover{
+      color:green;
+    }
+    #i1{
+      top:195px;
+    }
+    #i2{
+      top:320px;
+    }
+    #i3{
+      top:445px;
+    }
+    #i4{
+      top:570px;
+    }
+    #i5{
+      top:695px;
+    }
+    .input-wrap{
+      display:flex;
+      flex-direction:column;
+    }
+    .info-value{
+      color: red;
+      font-family: "Smooch Sans", sans-serif;
+      font-size:1.3rem;
+      padding:20px;
+      margin:10px;
+      margin-left:20px;
+      border:1px dotted;
+      border-radius:5px;
+      position:absolute;
+      display:none;
+      right:70px;
+      z-index:1;
+      background-color:#ffd;
+      display:none;
+    }
+    .show-info{
+      display:block;
+    }
+    #v1{
+      top:220px;
+    }
+    #v2{
+      top:345px;
+    }
+    #v3{
+      top:470px;
+    }
+    #v4{
+      top:595px;
+    }
+    #v5{
+      top:715px;
+    }
+    label{
+      margin:5px;
+    }
+    input{
+      font-family: "Smooch Sans", sans-serif;
+      padding:10px;
+      margin:5px;
+      outline:none;
+      border-radius:5px;
+      border:1px solid gray;
+      color:black;
+      font-size:1.5rem;
+      font-weight:490;
+    }
+    input::placeholder{
+      color:#07062a;
+    }
+    input:hover{
+      border:1px solid #2b6b75aa;
+      box-shadow:0px 0px 0px 5px #d5edf1aa;
+    }
+    .submit-box{
+      margin:5px;
+      margin-top:10px;
+    }
+    #submit{
+      margin:5px;
+      outline:none;
+      border:1px solid gray;
+      padding:10px;
+      color:#fff;
+      /*background-color:#36d5e7;*/
+      background-color:#062a1d;
+      border-radius:5px;
+      font-size:16px;
+    }
+    #submit:hover{
+      border:1px solid #1abc16aa;
+      box-shadow:0 0 0 3px #cbf7caaa;
+      background-color:#fff;
+      color:#000;
+    }
+    center{
+      font-size:4rem;
+      font-family: "Smooch Sans", sans-serif;
+    }
+    span{
+      color:#f41f0d;
+      font-size:1.2em;
+      font-family: "Smooch Sans", sans-serif;
+    }
+    #error{
+      margin:0.5px;
+      margin-left:5px;
+      visibility:hidden;
+      color:#f41f0d;
+      font-size:1.2em;
+      font-family: "Smooch Sans", sans-serif;
+    }
+
+
+    /*RESPONSIVENESS*/
+     @media (min-width:768px) and (max-width:1024px){
+        .input-box{
+           flex-direction: row;
+           justify-content: center;
+           align-items: center;
+        }
+        #signup{
+            margin:60px;
+            border:2px solid rgb(14, 117, 228);
+        }
+        label{
+            font-size:1.5rem;
+        }
+        #error{
+            font-size:1.5rem;
+        }
+        input{
+            width:600px;
+        }
+        .submit-box{
+            display:flex;
+            justify-self:center;
+            align-items: center;
+            transform:scale(1.3);
+            margin:20px;
+        }
+        legend{
+            font-size:2rem;
+        }
+      .fa-info-circle{
+        position: relative;
+       }
+       .info-value{
+        position:absolute;
+       } 
+       #i1{
+      top:35px;
+      }
+      #i2{
+      top:35px;
+      }
+      #i3{
+      top:35px;
+     }
+      #i4{
+      top:35px;
+     }
+      #i5{
+      top:35px;
+     }
+     #v1{
+      top:220px;
+    }
+    #v2{
+      top:285px;
+    }
+    #v3{
+      top:350px;
+    }
+    #v4{
+      top:415px;
+    }
+    #v5{
+      top:480px;
+    }
+     .input-wrap{
+        flex-direction: row;
+     }
+     }
+     @media (min-width:1024px){
+        .input-box{
+           flex-direction: row;
+           justify-content: center;
+           align-items: center;
+        }
+        #signup{
+            margin:40px;
+            border:2px solid rgb(14, 117, 228);
+        }
+        label{
+            font-size:1.5rem;
+        }
+        #error{
+            font-size:1.5rem;
+        }
+        input{
+            width:700px;
+        }
+        .submit-box{
+            display:flex;
+            justify-self:center;
+            align-items: center;
+            transform:scale(1.3);
+            margin:20px;
+        }
+        legend{
+            font-size:2rem;
+        }
+      .fa-info-circle{
+        position: relative;
+       }
+       .info-value{
+        position:absolute;
+       } 
+       #i1{
+      top:35px;
+      }
+      #i2{
+      top:35px;
+      }
+      #i3{
+      top:35px;
+     }
+      #i4{
+      top:35px;
+     }
+      #i5{
+      top:35px;
+     }
+     #v1{
+      top:220px;
+    }
+    #v2{
+      top:285px;
+    }
+    #v3{
+      top:350px;
+    }
+    #v4{
+      top:415px;
+    }
+    #v5{
+      top:480px;
+    }
+     .input-wrap{
+        flex-direction: row;
+     }
+    }  
+  </style>
+</head>
+<body>
+  <center>Create Account</center>
+  <form action="">
+    <fieldset id="signup">
+      <legend>Registration</legend>
+      <div class="input-box">
+        <label for="">User Name <span>*</span></label>
+        <div class="input-wrap">
+         <input id="username" autocomplete="off"type="text" placeholder="Enter user name">
+         <i id="i1"class="fas fa-info-circle"></i>
+         <div id="v1"class="info-value">User name must contain atleast three characters.</div>
+        </div>
+        <small id="error">error</small>
+      </div>
+      <div class="input-box">
+        <label for="">Email Id <span>*</span></label>
+       <div class="input-wrap">
+        <input autofocus autocomplete="off"type="email" placeholder="Enter Email Id">
+        <i id="i2"class="fas fa-info-circle"></i>
+        <div id="v2" class="info-value">Enter a valid email address
+           Example: username@example.com</div>
+       </div>
+        <small id="error">error</small>
+      </div>
+      <div class="input-box">
+        <label for="">Phone Number <span>( Optional )</span></label>
+       <div class="input-wrap">
+        <input autofocus autocomplete="off"type="email" placeholder="Enter Phone Number">
+        <i id="i3"class="fas fa-info-circle"></i>
+        <div id="v3"class="info-value">Enter a valid 10-digit mobile number Numbers only, no spaces or symbols.</div>
+       </div>
+        <small id="error">error</small>
+      </div>
+      <div class="input-box">
+        <label for="">Password <span>*</span></label>
+       <div class="input-wrap">
+        <input autofocus autocomplete="off" type="password"
+        placeholder="Enter Password">
+        <i id="i4"class="fas fa-info-circle"></i>
+        <div id="v4"class="info-value">
+          Password must contain:
+               • At least 6 characters
+               • 1 uppercase letter (A–Z)
+               • 1 lowercase letter (a–z)
+               • 1 number (0–9)
+               • 1 special character (@, #, $, !, etc.)
+               
+              </div>
+       </div>
+        <small id="error">error</small>
+      </div>
+      <div class="input-box">
+        <label for="">Confirm Password <span>*</span></label>
+       <div class="input-wrap">
+        <input autofocus autocomplete="off" type="password" placeholder="Enter Confirm Password">
+        <i id="i5"class="fas fa-info-circle"></i>
+        <div id="v5"class="info-value">Re-enter the same password
+          Must exactly match the password above</div>
+       </div>
+        <small id="error">error</small>
+      </div>
+      <div class="submit-box">
+        <button id="submit" type="submit" value="Submit">Submit details</button>
+      </div>
+    </fieldset>
+  </form>
+  <script>
+  let username = document.getElementById('username');
+  let faInfo = document.querySelectorAll('.fa-info-circle');
+
+  window.onload = function () {
+    username.focus();
+    username.select();
+  };
+
+  faInfo.forEach(icon => {
+    icon.addEventListener("click", () => {
+      const infoBox = icon.nextElementSibling;
+      const isOpen = infoBox.classList.contains("show-info");
+
+      // Close all info boxes
+      document.querySelectorAll(".info-value")
+        .forEach(v => v.classList.remove("show-info"));
+
+      // Toggle only if it was not already open
+      if (!isOpen) {
+        infoBox.classList.add("show-info");
+      }
+    });
+  });
+</script>
+</body>
+</html>
