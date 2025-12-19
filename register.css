@@ -1,0 +1,135 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family:"Smooch Sans", sans-serif;
+}
+#heading{
+    text-align: center;
+    font-size:4rem;
+}
+#reg-box{
+    margin:1%;
+    margin-top:2.5%;
+    border-radius:10px;
+    padding:20px;
+}
+#reg-legend{
+   font-size:3rem;
+   font-weight:480;
+   transform:translateY(-7px);
+}
+input{
+    padding:10px;
+    outline:none;
+    border-radius:5px;
+    border:1px solid gray;
+    color:black;
+    margin-top:10px;
+    margin-bottom:10px;
+    font-size:1rem;
+    font-weight:490;
+    width:75vw;
+}
+input::placeholder{
+    color:#07062a;
+}
+input:hover{
+    border:1px solid #2b6b75aa;
+    box-shadow:0px 0px 0px 5px #d5edf1aa;
+}
+label{
+    font-size:2rem;
+}
+span{
+    color:rgb(201, 29, 29);
+    font-size:2rem;
+}
+small{
+    color:rgb(201, 29, 29);
+    font-size:1.5rem;
+}
+.input-box{
+    display:flex;
+}
+
+.fa-info-circle{
+   position: relative;
+   top:24px;
+   right:50px;
+   visibility: hidden;
+}
+.fa-eye{
+   position: relative;
+   top:24px;
+   right:50px;
+}
+.fa-eye-slash{
+   position: relative;
+   top:24px;
+   right:50px;
+}
+.submit-box{
+    margin-top:10px;
+}
+#submit{
+    margin:5px;
+    outline:none;
+    border:1px solid gray;
+    padding:10px;
+    color:#fff;
+    background-color:#062a1d;
+    border-radius:5px;
+    font-size:16px;
+}
+#submit:hover{
+    border:1px solid #1abc16aa;
+    box-shadow:0 0 0 3px #cbf7caaa;
+    background-color:#fff;
+    color:#000;
+}
+.err{
+    display: none;
+}
+
+/* RESPONSIVENESS */
+@media (min-width:1024px){
+    .input-container{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom:10px;
+    }
+    input{
+        margin:5px;
+        font-size:1.4rem;
+    }
+    .fa-info-circle{
+   top:23px;
+   }
+   .fa-eye{
+   top:23px;
+}
+   .fa-eye-slash{
+   top:23px;
+}
+.submit-box{
+    display:flex;
+    justify-self:center;
+    align-items: center;
+    transform:scale(1.3);
+    margin:10px;
+    }
+    .err{
+        position: relative;
+        left:200px;
+        margin-bottom:25px;
+    }
+    #reg-box{
+     margin:1.5%;
+     margin-top:2.5%;
+     border-radius:10px;
+     padding:20px;
+}
+}
