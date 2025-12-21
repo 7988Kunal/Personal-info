@@ -109,10 +109,6 @@
     input::placeholder{
       color:#07062a;
     }
-    input.active{
-     border-color: #2b6b75aa;
-     box-shadow: 0 0 0 5px #d5edf1aa;
-    }
     input:hover{
       border:1px solid #2b6b75aa;
       box-shadow:0px 0px 0px 5px #d5edf1aa;
@@ -295,13 +291,12 @@
      .input-wrap{
         flex-direction: row;
      }
-    } 
-    
+    }  
   </style>
 </head>
 <body>
   <center>Create Account</center>
-  <form action="" autocomplete = "off">
+  <form action="">
     <fieldset id="signup">
       <legend>Registration</legend>
       <div class="input-box">
@@ -324,9 +319,9 @@
         <small id="error">error</small>
       </div>
       <div class="input-box">
-        <label for="">Phone Number</label>
+        <label for="">Phone Number <span>( Optional )</span></label>
        <div class="input-wrap">
-        <input autofocus autocomplete="off"type="tel" placeholder="Enter Phone Number">
+        <input autofocus autocomplete="off"type="email" placeholder="Enter Phone Number">
         <i id="i3"class="fas fa-info-circle"></i>
         <div id="v3"class="info-value">Enter a valid 10-digit mobile number Numbers only, no spaces or symbols.</div>
        </div>
@@ -335,7 +330,7 @@
       <div class="input-box">
         <label for="">Password <span>*</span></label>
        <div class="input-wrap">
-        <input autofocus autocomplete="new-password" type="password"
+        <input autofocus autocomplete="off" type="password"
         placeholder="Enter Password">
         <i id="i4"class="fas fa-info-circle"></i>
         <div id="v4"class="info-value">
@@ -353,7 +348,7 @@
       <div class="input-box">
         <label for="">Confirm Password <span>*</span></label>
        <div class="input-wrap">
-        <input autofocus autocomplete="new-password" type="password" placeholder="Enter Confirm Password">
+        <input autofocus autocomplete="off" type="password" placeholder="Enter Confirm Password">
         <i id="i5"class="fas fa-info-circle"></i>
         <div id="v5"class="info-value">Re-enter the same password
           Must exactly match the password above</div>
@@ -363,11 +358,6 @@
       <div class="submit-box">
         <button id="submit" type="submit" value="Submit">Submit details</button>
       </div>
-      <br>
-      <hr>
-      <br>
-      <span id="*info">“All fields marked with an asterisk (*) are compulsory.”</span>
-      <br>
     </fieldset>
   </form>
   <script>
@@ -396,10 +386,4 @@
   });
 </script>
 </body>
-
 </html>
-
-
-
-
-
