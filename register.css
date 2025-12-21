@@ -50,7 +50,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color:#b6b6f3;
+    background-color:#ddecff;
     border-radius:10px;
     padding:10px;
     margin:10px;
@@ -280,5 +280,6 @@ label{
 }
 
 }
+
 
 
