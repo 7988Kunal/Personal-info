@@ -50,7 +50,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color:#ddecff;
+    background-color:#fff;
     border-radius:10px;
     padding:10px;
     margin:10px;
@@ -280,6 +280,7 @@ label{
 }
 
 }
+
 
 
 
