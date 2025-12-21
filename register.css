@@ -78,7 +78,7 @@ small{
    position: relative;
    top:24px;
    right:50px;
-   visibility:visible;
+   visibility:hidden;
 }
 .fa-eye{
    position: relative;
