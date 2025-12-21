@@ -44,13 +44,12 @@ body{
     justify-content: center;
     align-items: center;
     margin-top:30px;
-    background-color:#b6b6f3;
-}
 #reg-box{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color:#b6b6f3;
     border-radius:10px;
     padding:10px;
     margin:10px;
@@ -280,3 +279,4 @@ label{
 }
 
 }
+
