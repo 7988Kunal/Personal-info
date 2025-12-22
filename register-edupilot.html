@@ -24,44 +24,54 @@
             <legend id="reg-legend">Registration</legend>
             <div class="input-container">
                 <label for="username">User Name <span>*</span></label>
-                <div class="input-box">
-                 <input autocomplete="off" autofocus type="text" placeholder="Enter user name" name="" id="username">
-                 <i class="fas fa-info-circle"></i>
+                <div class="input-box" id="user-box">
+                 <input autocomplete="off" autofocus type="text" placeholder="Enter user name" name="username" id="username">
+                 <i class="fas fa-exclamation-circle"></i>
                 </div>
             </div>
-             <small class="err">error</small>
+            <div class="error-box" id="user-err">
+                  <small class="err">error</small>
+            </div>
             <div class="input-container">
                 <label for="email">Email Id<span>*</span></label>
-                <div class="input-box">
-                 <input autocomplete="off" autofocus type="email" placeholder="Enter email id" name="" id="email">
-                 <i class="fas fa-info-circle"></i>
+                <div class="input-box" id="email-box">
+                 <input autocomplete="off" type="email" placeholder="Enter email id" name="emailid" id="email">
+                 <i class="fas fa-exclamation-circle"></i>
                 </div>
             </div>
-            <small class="err">error</small>
+            <div class="error-box" id="email-err">
+                  <small class="err">error</small>
+            </div>
             <div class="input-container">
-                <label for="tel">Phone Number</label>
-                <div class="input-box">
-                 <input autocomplete="off" autofocus type="tel" placeholder="Enter phone number" name="" id="phone">
-                 <i class="fas fa-info-circle"></i>
+                <label for="phone">Phone Number</label>
+                <div class="input-box" id="phone-box">
+                 <input autocomplete="off" type="tel" placeholder="Enter phone number" name="phone" id="phone">
+                 <i class="fas fa-exclamation-circle"></i>
                 </div>
             </div>
-            <small class="err">error</small>
+            <div class="error-box" id="phone-err">
+                  <small class="err">error</small>
+            </div>
             <div class="input-container">
-                <label for="pass">Password <span>*</span></label>
-                <div class="input-box">
-                 <input autocomplete="new-password" autofocus type="password" placeholder="Enter password" name="" id="password">
+                <label for="password">Password <span>*</span></label>
+                <div class="input-box" id="pass-box">
+                 <input autocomplete="new-password" type="password" placeholder="Enter password" name="password" id="password">
                  <i class="fas fa-eye toggle-pass"></i>
                 </div>
             </div>
-            <small class="err">error</small>
+            <div class="error-box" id="pass-err">
+                  <small class="err">error</small>
+            </div>
             <div class="input-container">
                 <label for="cpass">Confirm Password <span>*</span></label>
-                <div class="input-box">
-                 <input autocomplete="new-password" autofocus type="password" placeholder="Enter Confirm password" name="" id="cpass">
+                <div class="input-box" id="cpass-box">
+                 <input autocomplete="new-password" type="password" placeholder="Enter Confirm password" name="cpassword" id="cpass">
                  <i class="fas fa-eye toggle-pass"></i>
                 </div>
             </div>
-            <small class="err">error</small>
+            <div class="error-box" id="cpass-err">
+                  <small class="err">error</small>
+            </div>
             <div class="submit-box">
                 <button disabled  id="submit" type="submit"><i class="fas fa-sign-in-alt"></i> Submit details</button>
             </div>
@@ -76,6 +86,14 @@
         </fieldset>
     </form>
   </section>
+  <div id="popup-container">
+    <div>
+     <div id="popup-box">
+      <h1>Account Created successfully</h3>
+      <button id="ok" type="button">OK</button>
+     </div>
+    </div>
+  </div>
  <script src="register.js"></script>
 </body>
 </html>
