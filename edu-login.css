@@ -49,6 +49,11 @@ input{
     font-weight:490;
     width:85vw;
 }
+input:focus,
+input:-webkit-autofill {
+    font-size: 1.2rem !important;
+}
+
 input::placeholder{
     color:#07062a;
 }
@@ -231,3 +236,4 @@ input{
     font-size:19px;
 }
 }
+
