@@ -1,0 +1,233 @@
+*{
+    margin:0;
+    padding:0;
+}
+h1{
+    text-align: center;
+    font-family:"Smooch Sans", sans-serif;
+    margin-top:15px;
+    font-size:3rem;
+}
+#login-form{
+ margin:1.5%;
+ font-family:"Smooch Sans", sans-serif;
+}
+
+#login-container{
+    display: flex;
+    flex-direction:column;
+    justify-content: start;
+    align-items:start;
+    padding:2%;
+    border-radius:10px;
+    border-color: aqua;
+}
+
+#login-legend{
+   font-size:2.3rem;
+   font-weight:480;
+   transform:translateY(-7px);
+}
+label{
+    font-size:2rem;
+}
+.input-container{
+    display: flex;
+    flex-direction:column;
+    justify-content:start;
+    align-items: start;
+}
+input{
+    padding:10px;
+    outline:none;
+    border-radius:5px;
+    border:1px solid gray;
+    color:black;
+    margin-top:10px;
+    margin-bottom:10px;
+    font-size:1.2rem;
+    font-weight:490;
+    width:85vw;
+}
+input::placeholder{
+    color:#07062a;
+}
+input:hover{
+    border:1px solid #2b6b75aa;
+    box-shadow:0px 0px 0px 5px #d5edf1aa;
+}
+span{
+    font-weight:bold;
+    color:rgb(201, 29, 29);
+    font-size:2rem;
+}
+small{
+    font-weight:550;
+    color:rgb(201, 29, 29);
+    font-size:1.5rem;
+}
+.error-box{
+    display: flex;
+    justify-self: start;
+    align-items: center;
+    display:none;
+}
+.error-text{
+    width:100%;
+    display: flex;
+    justify-self: start;
+}
+.fa-exclamation-circle{
+   color:rgb(184, 36, 36);
+   position: relative;
+   top:3px;
+   right:50px;
+   visibility:hidden;
+}
+.fa-check-circle{
+    color: rgb(89, 132, 24);
+   position: relative;
+   top:3px;
+   right:50px;
+   visibility:hidden;
+}
+.fa-eye{
+   position: relative;
+   top:3px;
+   right:50px;
+}
+.fa-eye-slash{
+   position: relative;
+   top:3px;
+   right:50px;
+}
+
+.g-recaptcha{
+    border-radius:5px;
+    color:black;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+#recaptcha-box{
+    display: flex;
+    justify-content:start;
+    align-items: start;
+    margin-right:10px;
+}
+.input-icon-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-box{
+    margin-top:20px;
+}
+#submit{
+    outline:none;
+    border:1px solid gray;
+    padding:10px;
+    padding-right:30px;
+    padding-left:30px;
+    color:whitesmoke;
+    border: 1px solid rgb(14, 143, 126);
+    opacity:0.3;
+    background-color:#084909;
+    border-radius:5px;
+    font-size:16px;
+    cursor: not-allowed;
+}
+#submit.enable{
+    border:1px solid #262425aa;
+    box-shadow:0 0 0 3px #f7cad8aa;
+    background-color:#491008;
+    color:#fff;
+    opacity:1;
+    cursor: pointer;
+}
+
+.fa-sign-in-alt{
+    margin-right:10px;
+}
+
+ @media (min-width:768px) and (max-width:1024px){
+    #login-container{
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:2%;
+    border-radius:10px;
+    border-color: aqua;
+}
+.input-container{
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+}
+input{
+    margin-left:10px;
+    width:60vw;
+}
+ .error-box{
+    width:100%;
+    justify-self:center;
+    align-items:start;
+ }
+ .error-text{
+    margin-left:24%;
+ }
+ #recaptcha-box{
+    margin-left:20px;
+}
+.submit-box{
+    margin-top:30px;
+}
+#submit{
+    padding:15px;
+    padding-right:30px;
+    padding-left:30px;
+    font-size:19px;
+}
+} 
+
+@media (min-width:1024px){
+ #login-container{
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:2%;
+    border-radius:10px;
+    border-color: aqua;
+}
+.input-container{
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+}
+input{
+    margin-left:10px;
+    width:60vw;
+}
+ .error-box{
+    width:100%;
+    justify-self:center;
+    align-items:start;
+ }
+ .error-text{
+    margin-left:24%;
+ }
+ #recaptcha-box{
+    margin-left:20px;
+}
+.submit-box{
+    margin-top:30px;
+}
+#submit{
+    padding:15px;
+    padding-right:30px;
+    padding-left:30px;
+    font-size:19px;
+}
+}

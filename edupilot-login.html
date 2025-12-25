@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edupilot Login</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="edu-login.css">
+</head>
+<body>
+ <h1>Login To Edupilot Portal</h1>
+ <form id="login-form">
+   <fieldset id="login-container">
+    <legend id="login-legend">Edupilot Login</legend>
+    <div class="input-container">
+        <label for="email">Email Id <span>*</span></label>
+        <div class="input-icon-box">
+            <input autofocus type="email"  placeholder="Enter Registered Email Id" name="email" id="email">
+            <i class="fas fa-exclamation-circle"></i>
+        </div>
+    </div>
+    <div class="error-box">
+        <small class="error-text">err</small>
+    </div>
+    <div class="input-container">
+        <label for="password">Password <span>*</span></label>
+        <div class="input-icon-box">
+            <input type="password" placeholder="Enter Password" name="password" id="password">
+            <i class="fas fa-eye toggle-pass"></i>
+        </div>
+    </div>
+    <div class="error-box">
+        <small class="error-text">err</small>
+    </div>
+    <div class="input-container">
+        <label>Re-Captcha Verification <span>*</span></label>
+        <div class="input-icon-box" id="recaptcha-box">
+           <div class="g-recaptcha" aria-required="true" data-sitekey="6LdomTYsAAAAAPnpNcS99iQ8L6I3R2cpQyqCP20e"></div> 
+        </div>
+    </div>
+    <div class="submit-box">
+        <button  disabled id="submit" type="submit"><i class="fas fa-sign-in-alt"></i>  Login</button>
+    </div>
+    <br>
+  </fieldset>
+ </form>
+ <script src="login.js"></script>
+</body>
+</html>
