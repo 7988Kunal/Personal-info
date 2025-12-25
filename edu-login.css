@@ -20,7 +20,7 @@ h1{
     align-items:start;
     padding:2%;
     border-radius:10px;
-    border-color: aqua;
+    border-color: rgb(0, 166, 255);
 }
 
 #login-legend{
@@ -49,11 +49,6 @@ input{
     font-weight:490;
     width:85vw;
 }
-input:focus,
-input:-webkit-autofill {
-    font-size: 1.2rem !important;
-}
-
 input::placeholder{
     color:#07062a;
 }
@@ -155,6 +150,15 @@ small{
     margin-right:10px;
 }
 
+#pass-forgot{
+    text-decoration: none;
+    color: blue;
+}
+#pass-forgot:hover{
+    color: rgb(0, 200, 255);
+}
+
+
  @media (min-width:768px) and (max-width:1024px){
     #login-container{
     display: flex;
@@ -236,4 +240,3 @@ input{
     font-size:19px;
 }
 }
-
