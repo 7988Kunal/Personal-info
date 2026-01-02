@@ -249,7 +249,8 @@ form.addEventListener("submit", function (e) {
 });
 
 ok.addEventListener("click",()=>{
-  location.href = "logine2e.html";
+  location.href = "edupilot-login.html";
 });
 
 //
+
