@@ -163,7 +163,7 @@ function validateCheck(){
     return false;
   }
   if(!check.checked){
-    showErr(checkBox,checkErr,"Please agree to the terms & conditions and privacy policy");
+    showErr(checkBox,checkErr,"Agree to the terms & conditions and privacy policy");
     return false;
   }
   showSucc(checkBox);
@@ -253,5 +253,6 @@ ok.addEventListener("click",()=>{
 });
 
 //
+
 
 
