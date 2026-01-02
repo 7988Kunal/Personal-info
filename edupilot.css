@@ -17,9 +17,9 @@ body.loading{background: none !important;background-color: #fff;}
 
 /* nav section */
 .nav-bar{margin-top:10px; display:flex;justify-content:space-around;align-items: center;visibility: hidden;}
-#logo-text{display:flex;justify-self: start;}
+#logo-text{display:flex;justify-self: start;align-items: center;}
 #edu-logo{height:80px;width:80px;}
-#text{font-size:36px;color:#0E063B;font-family:'righteous',cursive;}
+#text{margin-left:5px; font-size:36px;color:#0E063B;font-family:'righteous',cursive;}
 .menu-items{font-size:20px; font-family:'pacifico',cursive; display:flex;justify-content:space-between;}
 .menu-items p{margin-right:40px;}
 .buttons{ display: flex;justify-content: space-between;align-items:start;}
