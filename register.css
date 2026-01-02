@@ -7,7 +7,7 @@ body{
 }
 #top-bar{
     /* background-color: #30759a; */
-    background-color: #000;
+    background-color: #06607e;
     padding:10px;
     color: whitesmoke;
 }
@@ -21,8 +21,11 @@ body{
 #logo{
     width:105px;
     height:105px;
+    background-color: #07062a;
+    border-radius:10px;
+    margin-right:10px;
 }
- #reg-img-container{
+ /* #reg-img-container{
     margin-top:30px;
     display: flex;
     justify-content: center;
@@ -33,7 +36,7 @@ body{
    height:50vh;
    border-radius:10px;
    border:2px solid #130dae;
-}
+} */
 .fa-user-plus{
     font-size:2.4rem;
     margin-right:15px;
@@ -84,6 +87,37 @@ input::placeholder{
 input:hover{
     border:1px solid #2b6b75aa;
     box-shadow:0px 0px 0px 5px #d5edf1aa;
+}
+
+#check{
+    padding:0px;
+    outline:none;
+    border-radius:0px;
+    border:0px solid gray;
+    color:black;
+    margin-top:0px;
+    margin-bottom:0px;
+    font-size:0rem;
+    font-weight:0;
+    width:60px;
+    transform: scale(2);
+    margin-top:0px;
+    margin-right:10px;
+}
+#check:hover{
+    border:0px solid #2b6b75aa;
+    box-shadow:0px 0px 0px 0px #d5edf1aa;
+}
+
+#check-box{
+    display: flex;
+    align-items:center;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+#agree-para a{
+    text-decoration-thickness:1.5px;
+    text-underline-offset:6px;
 }
 label{
     font-size:1.5rem;
@@ -140,13 +174,20 @@ small{
     padding:10px;
     color:#fff;
     opacity:0.2;
-    background-color:#491008;
+    border:1px dotted black;
+    /* background-color:#491008; */
+    background-color: #06607e;
     border-radius:5px;
     font-size:16px;
     cursor: not-allowed;
 }
 .err{
     display:none;
+}
+
+.msg small{
+    color: #07062a;
+    font-size:1.3rem;
 }
 /* Validation in input fields css */
 
@@ -158,13 +199,23 @@ small{
     border:1px solid #2b7532aa;
     box-shadow:0px 0px 0px 5px #d5f1d7aa;
 }
+.input-box.failure #check{
+    border:1px solid #752b2caa;
+    box-shadow:0px 0px 0px 0px #f1d5d5aa;
+}
+.input-box.success #check{
+    border:1px solid #2b7532aa;
+    box-shadow:0px 0px 0px 0px #d5f1d7aa;
+}
+
 .error-box.failure  .err{
     display:block;
 }
 #submit.enable{
     border:1px solid #262425aa;
     box-shadow:0 0 0 3px #f7cad8aa;
-    background-color:#491008;
+    background-color: #06607e;
+    border-radius:5px;
     color:#fff;
     opacity:1;
     cursor: pointer;
@@ -281,6 +332,11 @@ label{
    border-radius:10px;
    border:2px solid #130dae;
 }
+.agree-err{
+        position: relative;
+        left:520px;
+        margin-bottom:25px;
+    }
 }
 
 @media (min-width:1024px){
@@ -317,6 +373,11 @@ label{
     .err{
         position: relative;
         left:200px;
+        margin-bottom:25px;
+    }
+    .agree-err{
+        position: relative;
+        left:520px;
         margin-bottom:25px;
     }
     #reg-box{

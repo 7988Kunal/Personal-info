@@ -15,10 +15,11 @@
   <div id="heading"><img id="logo" src="https://i.ibb.co/JRR03DSP/A-modern-minimalist.png" alt="edu-guidance-logo"> Edupilot</div>
   <div id="heading" class="heading-bar"><i class="fas fa-user-plus"></i> Create Account</div>
  </div>
-  <section id="full-reg-container">
+ <br>
+  <!-- <section id="full-reg-container">
     <div id="reg-img-container">
         <img id="img-edu-reg" src="https://i.ibb.co/qYLRxg8J/file-00000000ee6071faba070da775f9f20b.png" alt="edupilot-reg">
-    </div>
+    </div> -->
     <form autocomplete="off" name="reg-form" action="register-details.php" method="post">
         <fieldset id="reg-box">
             <legend id="reg-legend">Registration</legend>
@@ -72,6 +73,15 @@
             <div class="error-box" id="cpass-err">
                   <small class="err">error</small>
             </div>
+            <div class="input-container">
+                <div class="input-box" id="check-box">
+                 <input type="checkbox" name="check" id="check">
+                 <label id="check-label"><p id="agree-para">I agree to <a href="" target="_blank" rel="noopener noreferrer">Terms & Conditions</a> and <a href="" target="_blank" rel="noopener noreferrer">Privacy Policy</a></p></label>
+                </div>
+            </div>
+            <div class="error-box" id="check-err">
+                  <small class="err agree-err">error</small>
+            </div>
             <div class="submit-box">
                 <button disabled  id="submit" type="submit"><i class="fas fa-sign-in-alt"></i> Submit details</button>
             </div>
@@ -85,7 +95,7 @@
             <br>
         </fieldset>
     </form>
-  </section>
+  <!-- </section> -->
   <div id="popup-container">
     <div>
      <div id="popup-box">

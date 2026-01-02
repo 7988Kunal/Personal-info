@@ -6,16 +6,19 @@ let form = document.querySelector('form');
 let phone = document.getElementById('phone');
 let password = document.getElementById('password');
 let cpass = document.getElementById('cpass');
+let check = document.getElementById('check');
 let userBox = document.getElementById('user-box');
 let emailBox = document.getElementById('email-box');
 let phoneBox = document.getElementById('phone-box');
 let passBox = document.getElementById('pass-box');
 let cpassBox = document.getElementById('cpass-box');
+let checkBox = document.getElementById('check-box');
 let userErr = document.getElementById('user-err');
 let emailErr = document.getElementById('email-err');
 let phoneErr = document.getElementById('phone-err');
 let passErr = document.getElementById('pass-err');
 let cpassErr = document.getElementById('cpass-err');
+let checkErr = document.getElementById('check-err');
 let submitbtn = document.getElementById('submit');
 let toggleEye = document.querySelectorAll('.toggle-pass');
 
@@ -24,6 +27,7 @@ let emailTouched = false;
 let phoneTouched = false;
 let passTouched = false;
 let cpassTouched = false;
+let checkTouched = false;
 
 
 
@@ -154,6 +158,17 @@ function validateCPass(){
 
 }
 
+function validateCheck(){
+  if(!checkTouched){
+    return false;
+  }
+  if(!check.checked){
+    showErr(checkBox,checkErr,"Please tick the checkbox");
+    return false;
+  }
+  showSucc(checkBox);
+   return true;
+}
 
 function checkForm(){
   const userValid = validateUserName();
@@ -161,8 +176,9 @@ function checkForm(){
   const phoneValid = validatePhone();
   const passValid = validatePass();
   const cpassValid = validateCPass();
+  const checkValid = validateCheck();
 
-  if(userValid && emailValid && phoneValid && passValid && cpassValid){
+  if(userValid && emailValid && phoneValid && passValid && cpassValid && checkValid){
     submitbtn.disabled = false;
     submitbtn.classList.add("enable");
   }else{
@@ -192,6 +208,10 @@ cpass.addEventListener("input",() =>{
   checkForm();
 })
 
+check.addEventListener("input",()=>{
+  checkTouched = true;
+  checkForm();
+})
 
 // main
 
