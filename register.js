@@ -92,7 +92,7 @@ function validateEmail(){
      return false;
    }
    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailValue)){
-     showErr(emailBox,emailErr,"Invalid email id format use example : username@example.com etc.");
+     showErr(emailBox,emailErr,"Invalid email Id format");
      return false;
    }
    
@@ -163,7 +163,7 @@ function validateCheck(){
     return false;
   }
   if(!check.checked){
-    showErr(checkBox,checkErr,"Please tick the checkbox to accept terms & conditions and privacy policy");
+    showErr(checkBox,checkErr,"Please agree to the terms & conditions and privacy policy");
     return false;
   }
   showSucc(checkBox);
@@ -253,4 +253,5 @@ ok.addEventListener("click",()=>{
 });
 
 //
+
 
