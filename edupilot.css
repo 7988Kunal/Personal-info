@@ -10,3 +10,24 @@
 @keyframes spin {0%{transform: rotate(0deg);}100%{transform: rotate(360deg);}}
 #preloader.hidden{visibility:hidden;opacity:0;}
 .hidden{visibility:hidden;opacity:0;}
+/* Background Image */
+body{background-image:url('https://i.ibb.co/Zp6cJGsF/Background-image.jpg');background-repeat: no-repeat;background-size:cover;background-attachment: fixed;background-position:center;}
+body.loading{background: none !important;background-color: #fff;}
+/* Home page CSS */
+
+/* nav section */
+.nav-bar{margin-top:10px; display:flex;justify-content:space-around;align-items: center;visibility: hidden;}
+#logo-text{display:flex;justify-self: start;}
+#edu-logo{height:80px;width:80px;}
+#text{font-size:36px;color:#0E063B;font-family:'righteous',cursive;}
+.menu-items{font-size:20px; font-family:'pacifico',cursive; display:flex;justify-content:space-between;}
+.menu-items p{margin-right:40px;}
+.buttons{ display: flex;justify-content: space-between;align-items:start;}
+button{width:138px;height:45px;border-radius:20px;font-size:17px;}
+#log-in{margin-right:15px;width:120px;background-color: #fff;outline:none;border:1px solid #000;}
+#get-started{background-color: #2FB9DF;border:1px solid#55EEEE;color: #fff;font-weight:bold;}
+
+
+/* Laptop view and desktop */
+
+@media (min-width:1024px) {.nav-bar{visibility: visible;}}
