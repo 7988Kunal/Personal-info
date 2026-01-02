@@ -88,7 +88,7 @@ function validateEmail(){
      return false;
    }
    if(emailValue === ""){
-     showErr(emailBox,emailErr,"Email id cannot be blank");
+     showErr(emailBox,emailErr,"Email Id cannot be blank");
      return false;
    }
    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailValue)){
@@ -149,7 +149,7 @@ function validateCPass(){
      return false;
    }
    if(!(cpassValue === passValue)){
-     showErr(cpassBox,cpassErr,"Confirm Password is not matching");
+     showErr(cpassBox,cpassErr,"Confirm Password must be same as Password");
      return false;
    }
    
@@ -163,7 +163,7 @@ function validateCheck(){
     return false;
   }
   if(!check.checked){
-    showErr(checkBox,checkErr,"Please tick the checkbox");
+    showErr(checkBox,checkErr,"Please tick the checkbox to accept terms & conditions and privacy policy");
     return false;
   }
   showSucc(checkBox);
@@ -251,4 +251,5 @@ form.addEventListener("submit", function (e) {
 ok.addEventListener("click",()=>{
   location.href = "logine2e.html";
 });
+
 //
