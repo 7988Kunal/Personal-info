@@ -16,7 +16,7 @@ body.loading{background: none !important;background-color: #fff;}
 /* Home page CSS */
 /* nav section */
 .nav-bar{position: fixed;top:0;left:0; width:100%;height:100px; background:linear-gradient(#fff,#a8deed); z-index:1000;display:flex;justify-content:space-around;align-items: center;visibility:visible;}
-.main-content{margin-top:160px;}
+.main-content{margin-top:130px;}
 #logo-text{display:flex;justify-self: start;align-items: center;}
 #edu-logo{height:80px;width:80px;}
 #text{margin-left:5px; font-size:36px;color:#0E063B;font-family:'righteous',cursive;}
@@ -27,7 +27,7 @@ body.loading{background: none !important;background-color: #fff;}
 button{width:138px;height:45px;border-radius:20px;font-size:17px;}
 #log-in{margin-right:15px;width:120px;background-color: #fff;outline:none;border:1px solid #000;}
 #get-started{background-color: #2FB9DF;border:1px solid#55EEEE;color: #fff;font-weight:bold;}
-.more-bar{padding-left:61%;display: flex;justify-content: center;align-items: center;display: none;margin-top:10px;}
+.more-bar{padding-left:61%;display: flex;justify-content: center;align-items: center;display: none;}
 #internal-more{display: flex;flex-direction: column; justify-content: center; align-items: center;
  background:linear-gradient(#fff,#a8deed); opacity:0.8;border-radius:10px;
  border:1px solid #0E063B;width:200px;padding:10px;flex-wrap: wrap;padding-left:1px;padding-right:1px;}
@@ -42,5 +42,4 @@ button{width:138px;height:45px;border-radius:20px;font-size:17px;}
  button{width:120px;height:42px;font-size:16px;}#log-in{width:110px;}}
 @media (min-width:768px) and (max-width:996px) {.nav-bar{visibility:visible !important;}.menu-items.hide{display: block;display: flex !important; flex-direction:row;} #text{font-size:22px;margin-right:8px;}.menu-items{font-size:16px;}.menu-items p{margin-right:15px;}
  button{width:90px;height:38px;font-size:14px;}#log-in{width:110px;}}
-
 @media (max-width:767px){.more-bar{display: none !important;}}
