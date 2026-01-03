@@ -38,7 +38,7 @@ button{width:138px;height:45px;border-radius:20px;font-size:17px;}
 .menu-items.hide{display: none;}
 /* Mobile side bar css */
 .side-menu{position:fixed;background-color: #fff;left:0px;top:100px;height:100%;width:50%; display: none;}
-.side-menu p{padding-top:10px;padding-left:10px;}
+.side-menu p{padding-top:25px;padding-left:10px;}
 .side-menu p a{font-family:'pacifico',cursive;text-decoration: none;color:black;}
 .side-menu.show{display: block;}
 .more-box{margin-top:10px;background:linear-gradient(#fff,#a8deed); opacity:0.8;margin:5px;border-radius:10px;padding:5px; display: flex;flex-direction: column;align-items: center; justify-content: center;font-family:'pacifico',cursive;display: none;}
