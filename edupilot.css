@@ -30,7 +30,7 @@ button{width:138px;height:45px;border-radius:20px;font-size:17px;}
 #internal-more{display: flex;flex-direction: column; justify-content: center; align-items: center;
  background:linear-gradient(#fff,#a8deed); opacity:0.8;border-radius:10px;
  border:1px solid #0E063B;width:200px;padding:10px;flex-wrap: wrap;padding-left:1px;padding-right:1px;}
- .more-options a{color: -webkit-link;text-decoration: none;}
+ .more-options a{color:black;text-decoration: none;}
  .more-options a:hover{text-decoration: underline;}
  .more-bar.show{display: block;}
 
@@ -40,4 +40,5 @@ button{width:138px;height:45px;border-radius:20px;font-size:17px;}
  button{width:120px;height:42px;font-size:16px;}#log-in{width:110px;}}
 @media (min-width:768px) and (max-width:996px) {.nav-bar{visibility:visible !important;}#text{font-size:22px;margin-right:8px;}.menu-items{font-size:16px;}.menu-items p{margin-right:15px;}
  button{width:90px;height:38px;font-size:14px;}#log-in{width:110px;}}
+
 @media (max-width:767px){.more-bar{display: none !important;}}
