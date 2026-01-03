@@ -15,3 +15,13 @@ window.addEventListener("load",()=>{
   },1000)
 })
 
+
+// more bar js
+
+let moreDropdown = document.getElementById('more-dropdown');
+let moreBar = document.getElementById('more-bar');
+
+moreDropdown.addEventListener("click",()=>{
+ const isOpen = moreBar.classList.toggle("show");
+ moreDropdown.innerText = isOpen ? "More  △" : "More  ▽";
+});

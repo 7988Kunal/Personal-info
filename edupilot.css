@@ -11,23 +11,30 @@
 #preloader.hidden{visibility:hidden;opacity:0;}
 .hidden{visibility:hidden;opacity:0;}
 /* Background Image */
-body{background-image:url('https://i.ibb.co/Zp6cJGsF/Background-image.jpg');background-repeat: no-repeat;background-size:cover;background-attachment: fixed;background-position:center;}
+body{background-image:url('https://i.ibb.co/Zp6cJGsF/Background-image.jpg');background-repeat: no-repeat;background-size:cover;background-attachment:fixed;background-position:center;}
 body.loading{background: none !important;background-color: #fff;}
 /* Home page CSS */
-
 /* nav section */
 .nav-bar{margin-top:10px; display:flex;justify-content:space-around;align-items: center;visibility: hidden;}
 #logo-text{display:flex;justify-self: start;align-items: center;}
 #edu-logo{height:80px;width:80px;}
 #text{margin-left:5px; font-size:36px;color:#0E063B;font-family:'righteous',cursive;}
 .menu-items{font-size:20px; font-family:'pacifico',cursive; display:flex;justify-content:space-between;}
-.menu-items p{margin-right:40px;}
+.menu-items p{margin-right:80px;}
+.menu-items p a{text-decoration:none;color:#000;}
 .buttons{ display: flex;justify-content: space-between;align-items:start;}
 button{width:138px;height:45px;border-radius:20px;font-size:17px;}
 #log-in{margin-right:15px;width:120px;background-color: #fff;outline:none;border:1px solid #000;}
 #get-started{background-color: #2FB9DF;border:1px solid#55EEEE;color: #fff;font-weight:bold;}
-
-
+.more-bar{padding-left:61%;display: flex;justify-content: center;align-items: center;display: none;margin-top:10px;}
+#internal-more{display: flex;flex-direction: column; justify-content: center; align-items: center;
+ background:linear-gradient(#fff,#2FB9DF);opacity:0.8;border-radius:10px;
+ border:1px solid #0E063B;width:200px;padding:10px;}
+ .more-bar.show{display: block;}
 /* Laptop view and desktop */
-
-@media (min-width:1024px) {.nav-bar{visibility: visible;}}
+@media (min-width:1042px) {.nav-bar{visibility: visible;}}
+@media (min-width:997px) and (max-width:1042px) {.nav-bar{visibility:visible !important;}#text{font-size:30px;}.menu-items{font-size:17px;}.menu-items p{margin-right:30px;}
+ button{width:120px;height:42px;font-size:16px;}#log-in{width:110px;}}
+@media (min-width:768px) and (max-width:996px) {.nav-bar{visibility:visible !important;}#text{font-size:22px;margin-right:8px;}.menu-items{font-size:16px;}.menu-items p{margin-right:15px;}
+ button{width:90px;height:38px;font-size:14px;}#log-in{width:110px;}}
+@media (max-width:767px){.more-bar{display: none !important;}}
