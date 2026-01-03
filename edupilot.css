@@ -44,5 +44,5 @@ button{width:138px;height:45px;border-radius:20px;font-size:17px;}
 @media (min-width:768px) and (max-width:996px) {.nav-bar{visibility:visible !important;}.menu-items.hide{display: block;display: flex !important; flex-direction:row;} #text{font-size:22px;margin-right:8px;}.menu-items{font-size:16px;}.menu-items p{margin-right:15px;}
  button{width:90px;height:38px;font-size:14px;}#log-in{width:110px;}}
 @media (max-width:767px){.more-bar{display: none !important;}#menu-icon{display: block;}#edu-logo{height:58px;width:58px;}#text{font-size:16px;}
- button{width:52px;height:18px;font-size:8px;}#log-in{width:62px;}
+ button{width:60px;height:25px;font-size:9.5px;}#log-in{width:62px;}
 }
