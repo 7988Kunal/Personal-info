@@ -32,10 +32,20 @@ button{width:138px;height:45px;border-radius:20px;font-size:17px;}
 #internal-more{display: flex;flex-direction: column; justify-content: center; align-items: center;
  background:linear-gradient(#fff,#a8deed); opacity:0.8;border-radius:10px;
  border:1px solid #0E063B;width:200px;padding:10px;flex-wrap: wrap;padding-left:1px;padding-right:1px;}
- .more-options a{color:black;text-decoration: none;}
- .more-options a:hover{text-decoration: underline;}
- .more-bar.show{display: block;}
- .menu-items.hide{display: none;}
+.more-options a{color:black;text-decoration: none;}
+.more-options a:hover{text-decoration: underline;}
+.more-bar.show{display: block;}
+.menu-items.hide{display: none;}
+/* Mobile side bar css */
+.side-menu{position:fixed;background-color: #fff;left:0px;top:100px;height:100%;width:50%; display: none;}
+.side-menu p{padding-top:10px;padding-left:10px;}
+.side-menu p a{font-family:'pacifico',cursive;text-decoration: none;color:black;}
+.side-menu.show{display: block;}
+.more-box{margin-top:10px;background:linear-gradient(#fff,#a8deed); opacity:0.8;margin:5px;border-radius:10px;padding:5px; display: flex;flex-direction: column;align-items: center; justify-content: center;font-family:'pacifico',cursive;display: none;}
+.more-box .more-options{text-align: center;}
+.more-box .more-options a:hover{text-decoration: underline;}
+.more-box.show{display: block;}
+#more-drop{font-family:'pacifico',cursive;}
 
 /* Laptop view and desktop */
 @media (min-width:1042px) {.nav-bar{visibility: visible;}.menu-items.hide{display: block;display: flex !important; flex-direction:row;}}
@@ -43,6 +53,6 @@ button{width:138px;height:45px;border-radius:20px;font-size:17px;}
  button{width:120px;height:42px;font-size:16px;}#log-in{width:110px;}}
 @media (min-width:768px) and (max-width:996px) {.nav-bar{visibility:visible !important;}.menu-items.hide{display: block;display: flex !important; flex-direction:row;} #text{font-size:22px;margin-right:8px;}.menu-items{font-size:16px;}.menu-items p{margin-right:15px;}
  button{width:90px;height:38px;font-size:14px;}#log-in{width:110px;}}
-@media (max-width:767px){.more-bar{display: none !important;}#menu-icon{display: block;}#edu-logo{height:58px;width:58px;}#text{font-size:16px;}
- button{width:60px;height:25px;font-size:9.5px;}#log-in{width:62px;}
-}
+@media (max-width:767px) and (min-width:300px) {.more-bar{display: none !important;}#menu-icon{display: block;}#edu-logo{height:58px;width:58px;}#text{font-size:16px;}
+ button{width:60px;height:25px;font-size:9.5px;}#log-in{width:62px;}}
+@media (max-width:299px) {.nav-bar{visibility: hidden;}}
