@@ -47,7 +47,7 @@ button{width:138px;height:45px;border-radius:20px;font-size:17px;}
 .more-box.show{display: block;}
 #more-drop{font-family:'pacifico',cursive;}
 /* edubot section css */
-.edubot-section{display: flex;justify-content: space-around;align-items: center;display:none;}
+.edubot-section{margin-top:10px; display: flex;justify-content: space-around;align-items: center;display:none;}
 .edubot-box{ display: flex;flex-direction: column; justify-content:start;}
 #learn{margin-left:30px; border:1px solid #55EEEE;margin-right:10px; background-color: #2FB9DF;color:#fff;font-weight:bold;}
 #start{margin-left:0; border:1px solid black;}
@@ -55,13 +55,19 @@ button{width:138px;height:45px;border-radius:20px;font-size:17px;}
 #text-heading{ font-size:20px;font-family:'poppins',sans-serif;color: #0E063B;}
 .button-part{ padding:0px;margin-top:40px; margin-left:10px; display:flex;justify-content:flex-start;}
 #edubot-img{width:380px;height:380px;border-radius:25px;}
-
+.heading-part{display: flex;flex-direction: column;}
+.heading01{margin-left:5px;}
 /* Laptop view and desktop */
 @media (min-width:1042px) {.nav-bar{visibility: visible;}.menu-items.hide{display: block;display: flex !important; flex-direction:row;}.edubot-section{display: block;display: flex !important; flex-direction:row;}}
 @media (min-width:997px) and (max-width:1042px) {.nav-bar{visibility:visible !important;}.menu-items.hide{display:block;display: flex !important; flex-direction:row;} #text{font-size:30px;}.menu-items{font-size:17px;}.menu-items p{margin-right:30px;}
- button{width:120px;height:42px;font-size:16px;}#log-in{width:110px;}}
+ button{width:120px;height:42px;font-size:16px;}#log-in{width:110px;}.edubot-section{display: block;display: flex !important; flex-direction:row;}
+ #heading{font-size:40px;}#text-heading{font-size:16px;}#edubot-img{width: 300px;height: 300px;} }
 @media (min-width:768px) and (max-width:996px) {.nav-bar{visibility:visible !important;}.menu-items.hide{display: block;display: flex !important; flex-direction:row;} #text{font-size:22px;margin-right:8px;}.menu-items{font-size:16px;}.menu-items p{margin-right:15px;}
- button{width:90px;height:38px;font-size:14px;}#log-in{width:110px;}}
+ button{width:90px;height:38px;font-size:14px;}#log-in{width:110px;}.edubot-section{display: block;display: flex !important; flex-direction:row;}
+ #heading{font-size:30px;}#text-heading{font-size:13px;}#edubot-img{width:240px;height:240px;}}
 @media (max-width:767px) and (min-width:300px) {.more-bar{display: none !important;}#menu-icon{display: block;}#edu-logo{height:58px;width:58px;}#text{font-size:16px;}
- button{width:60px;height:25px;font-size:9.5px;}#log-in{width:62px;}}
+ button{width:60px;height:25px;font-size:9.5px;}#log-in{width:62px;}.edubot-section{display: block;display: flex !important; flex-direction:row;justify-content:space-around;padding:10px;}
+ #heading{font-size:20px;}.para-text{margin-top:10px;padding-right:10px;} #text-heading{font-size:10px;display: inline;}#edubot-img{width:115px;height:115px;padding-right:10px;}
+ #start{width:90px;height:24px;font-size:13px;}#learn{width:90px;height:24px;font-size:13px;}#heading2{font-size:20px;display: inline;}
+.heading-part{display:inline;justify-content: space-between;} .button-part{margin-top:20px; margin-left:0px;} }
 @media (max-width:299px) {.nav-bar{visibility: hidden;}}
